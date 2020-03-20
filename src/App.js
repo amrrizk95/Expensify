@@ -9,6 +9,7 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 
+
 const store = configureStore();
 
 store.dispatch(addExpense({ description: 'Water bill',amount:4500 }));
@@ -23,7 +24,6 @@ class App extends Component {
 
 
   render() {
- 
     return (
       <div className="App">
         <Provider store={store}>
